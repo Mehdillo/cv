@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+body {
+  background: rgb(18, 18, 18); /* Dark background */
+  color: rgb(224, 224, 224); /* Light text for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container
+{
+  position: relative;
+  width: 100%;
+  max-width: 10000px;
+  min-height: 1000px;
+  margin:50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr ;
+  box-shadow: 0 35px 55px rgba(211, 68, 68, 0.1);
+  border-radius: 15px
+}
+.container .left_Side {
+  position: relative;
+  background: linear-gradient(145deg, #1e3a5f, #2b4f7a); /* Gradient for shiny effect */
+  padding: 45px;
+  color: #E0E0E0; /* Light text for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+}
+
+
+
+.profileText
+{
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(17, 46, 46, 0.2);
+}
+.profileText .imgBx
+{
+  position:relative;
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  overflow:hidden;
+
+}
+.profileText .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileText h2
+{
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profileText h2 span
+{
+  font-size: 0.8em;
+  font-style: 300;
+}
+.contactInfo
+{
+  padding-top: 40px ;
+}
+.title
+{
+  color: #D8E9A8;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+
+}
+
+.contactInfo ul
+{
+  position: relative;
+}
+.contactInfo ul li
+{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #D8E9A8;
+}
+.contactInfo ul li span
+{
+  color: #fff;
+  font-weight: 300;
+}
+.contactInfo.education li
+{
+  margin-bottom: 15px;
+
+}
+.contactInfo.education h5
+{
+  color: rgb(241, 141, 141);
+  font-weight: 500;
+}
+.contactInfo.education h4
+{
+  color: rgb(252, 248, 248);
+  font-weight: 500;
+}
+.contactInfo.education h4:nth-child(2)
+{
+  color: #fff;
+  font-weight: 300;
+}
+.contactInfo.language .percent
+{
+  position: relative;
+  width: 50%;
+  height: 6px;
+  background: #D8E9A8;
+  display: block;
+  margin-top: 5px;
+}
+.contactInfo.language .percent div
+{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #D8E9A8;
+}
+.container .right_Side
+{
+  position: relative;
+  background: #E0E0E0;
+  padding: 40px;
+  border-radius: 10px;
+}
+.about
+{
+  margin-bottom: 50px;
+
+}
+.about:last-child
+{
+  margin-bottom: 0;
+}
+.title2
+{
+  color:#003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p
+{
+  color: #333;
+}
+.about .box
+{
+  display:flex ;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .year_company
+{
+  min-width: 150px;
+}
+.about .box .year_company h5
+{
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+.about .box .text h4{
+  text-transform: uppercase;
+  color: rgb(33, 152, 151)
+;
+  font-size: 16px;
+}
+.skills .box
+{
+  position: relative;
+  width: 100%;
+  display:grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.skills .box h4
+{
+  text-transform: uppercase;
+  color: #323232;
+  font-weight: 500;
+
+}
+.skills .box .percent
+{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #c1baba;
+}
+.skills .box .percent div
+{
+  position: absolute;
+  top: 0;
+  left: 00;
+  height: 100%;
+  background: rgb(33, 152, 151)
+;
+}
+.interest ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.interest ul li
+{
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.interest ul li .fa
+{
+  color: #800b0d;
+  font-size: 18px;
+  width: 20px;
+}
+
