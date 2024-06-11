@@ -8,7 +8,7 @@
 
 }
 body {
-  background: rgb(18, 1, 18); /* Dark background */
+  background: rgb(255, 0, 0); /* Dark background */
   color: rgb(224, 224, 224); /* Light text for contrast */
   display: flex;
   justify-content: center;
